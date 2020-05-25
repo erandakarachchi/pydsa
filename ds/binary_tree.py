@@ -55,7 +55,7 @@ class BinaryTree:
             self._print_tree_in_order(curr_node.right)
 
     def print_tree_post_order(self):
-        if self.get_length() <=0:
+        if self.get_length() <= 0:
             return "Empty Tress"
         else:
             self._print_tree_post_order(self.root)
@@ -67,12 +67,12 @@ class BinaryTree:
             print(curr_node.value)
 
     def print_tree_pre_order(self):
-        if self.get_length()<=0:
+        if self.get_length() <= 0:
             return "Empty Tree"
         else:
             self._print_tree_pre_order(self.root)
 
-    def _print_tree_pre_order(self,curr_node):
+    def _print_tree_pre_order(self, curr_node):
         if curr_node is not None:
             print(curr_node.value)
             self._print_tree_pre_order(curr_node.left)
